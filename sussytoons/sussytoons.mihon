@@ -1,0 +1,22 @@
+{
+  "id": "sussytoons",
+  "name": "SussyToons",
+  "author": "Yuuta",
+  "version": "1.0.0",
+  "type": "manga",
+  "language": "pt-BR",
+  "baseUrl": "https://www.sussytoons.wtf",
+  "catalogs": [
+    {
+      "name": "SussyToons",
+      "search": "/api/search?query={query}&page={page}",
+      "listLatest": "/api/latest?page={page}",
+      "listPopular": "/api/popular?page={page}"
+    }
+  ],
+  "manga": {
+    "details": "/api/manga/{manga_id}",
+    "chapters": "/api/manga/{manga_id}/chapters",
+    "pages": "/api/reader/{chapter_id}"
+  }
+}
